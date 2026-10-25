@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4f46e5">
+<title>My Daily Spiritual Accountability | Thread N Souls</title>
+<meta name="description" content="A gentle daily Islamic reflection checklist from Thread N Souls.">
+<style>
+:root{--ink:#202235;--muted:#62657a;--purple:#4f46e5;--pale:#f3f1ff;--line:#e6e3f5}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f1efff,#faf9ff 320px,#f8f8fb);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{width:min(760px,100%);margin:auto;padding:22px 15px 42px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 28px #2d276411;overflow:hidden}.top{height:8px;background:var(--purple)}.inner{padding:clamp(20px,5vw,38px)}
+.brand{color:var(--purple);font-size:.82rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;letter-spacing:-.04em;margin:10px 0 16px}.intro{font-size:1.08rem;color:#45475d}
+.note{background:var(--pale);border-radius:13px;padding:14px 16px;margin:18px 0 24px;color:#42415f}label.field{display:block;font-weight:700;margin:18px 0 8px}
+input[type=date],input[type=text],textarea{width:100%;padding:12px 13px;border:1px solid #cbc8df;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+fieldset{border:0;padding:0;margin:22px 0}legend{font-size:1.2rem;font-weight:800;margin-bottom:12px}.item{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin:9px 0;cursor:pointer}.item:has(input:checked){background:#f3f1ff;border-color:#b7b1ff}
+input[type=checkbox]{width:21px;height:21px;flex:0 0 21px;margin:2px 0 0;accent-color:var(--purple)}.item strong{display:block}.item small{display:block;color:var(--muted);margin-top:2px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}button{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer}.primary{background:var(--purple);color:white}.secondary{background:#eeecfb;color:#37335e}
+.progress{margin:16px 0 4px;font-size:.92rem;color:var(--muted)}.track{height:8px;background:#e9e7f5;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:var(--purple);transition:width .2s}
+.dua{text-align:center;margin:24px 0 4px;font-size:1.1rem;font-weight:700}.translation{text-align:center;color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:.88rem;margin:18px 8px 0}
+@media print{body{background:white}main{padding:0}.card{box-shadow:none}.actions,.progress,.track{display:none}}
+</style></head>
+<body><main><section class="card"><div class="top"></div><div class="inner">
+<div class="brand">Thread N Souls · Daily Reminder</div><h1>My Daily Spiritual Accountability</h1>
+<p class="intro"><em>A few sincere minutes of reflection can help us recognize our shortcomings, improve our actions, and remember the Hereafter.</em></p>
+<div class="note">This checklist is a personal reminder—not a measure of anyone else's faith or a guarantee of salvation. Never despair of Allah's mercy (Qur’an 39:53).</div>
+<label class="field" for="day">Today's date</label><input id="day" type="date">
+<fieldset><legend>My daily reflection</legend>
+<label class="item"><input type="checkbox" data-save="prayer"><span><strong>I guarded my obligatory prayers.</strong><small>I tried to pray sincerely and on time.</small></span></label>
+<label class="item"><input type="checkbox" data-save="repent"><span><strong>I turned to Allah in repentance.</strong><small>I acknowledged mistakes and asked for forgiveness.</small></span></label>
+<label class="item"><input type="checkbox" data-save="harm"><span><strong>I tried not to harm anyone.</strong><small>I watched my words, actions, and intentions.</small></span></label>
+<label class="item"><input type="checkbox" data-save="rights"><span><strong>I respected people's rights.</strong><small>Where possible, I made amends or returned what was due.</small></span></label>
+<label class="item"><input type="checkbox" data-save="kindness"><span><strong>I did an act of kindness.</strong><small>I helped someone, gave charity, or offered sincere support.</small></span></label>
+<label class="item"><input type="checkbox" data-save="quran"><span><strong>I connected with the Qur’an.</strong><small>I read, listened to, or reflected on its guidance.</small></span></label>
+<label class="item"><input type="checkbox" data-save="character"><span><strong>I worked on my character.</strong><small>I practised patience, gratitude, humility, or forgiveness.</small></span></label>
+<label class="item"><input type="checkbox" data-save="akhirah"><span><strong>I remembered the Hereafter.</strong><small>I asked Allah for protection from the Fire and for a good ending.</small></span></label>
+</fieldset>
+<div class="progress" id="progressText" aria-live="polite">0 of 8 reflections checked</div><div class="track"><div class="bar" id="bar"></div></div>
+<label class="field" for="improve">One thing I want to improve tomorrow</label><textarea id="improve" rows="3" placeholder="Write a private note to yourself…"></textarea>
+<label class="field" for="help">One person I may be able to help</label><input id="help" type="text" placeholder="Optional">
+<div class="actions"><button class="primary" id="saveBtn" type="button">Save on this device</button><button class="secondary" id="printBtn" type="button">Print / Save as PDF</button><button class="secondary" id="resetBtn" type="button">Clear today's checks</button></div>
+<p id="status" role="status" class="progress">Your reflections stay in this browser on this device. Nothing is sent to Thread N Souls.</p>
+<p class="dua">اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ</p><p class="translation">O Allah, protect me from the Fire.</p>
+</div></section><footer>Made as a gentle reminder by <strong>Thread N Souls (@ThreadNSouls)</strong>.<br>Checklists support reflection; they do not determine anyone’s standing with Allah.</footer></main>
+<script>
+(()=>{const date=document.getElementById('day'),checks=[...document.querySelectorAll('input[type=checkbox][data-save]')],improve=document.getElementById('improve'),help=document.getElementById('help'),status=document.getElementById('status');const t=new Date();date.value=`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;const key=()=>`thread-n-souls-spiritual-checklist-${date.value||'undated'}`;
+function progress(){const n=checks.filter(c=>c.checked).length;document.getElementById('progressText').textContent=`${n} of ${checks.length} reflections checked`;document.getElementById('bar').style.width=`${n/checks.length*100}%`}
+function load(){let d={};try{d=JSON.parse(localStorage.getItem(key())||'{}')}catch(e){}checks.forEach(c=>c.checked=!!d[c.dataset.save]);improve.value=d.improve||'';help.value=d.help||'';progress()}
+function save(msg=true){const d={};checks.forEach(c=>d[c.dataset.save]=c.checked);d.improve=improve.value;d.help=help.value;try{localStorage.setItem(key(),JSON.stringify(d));if(msg)status.textContent='Saved in this browser on this device. Nothing was sent to a server.'}catch(e){status.textContent='This browser may not allow local saving. You can still print or save a PDF.'}}
+checks.forEach(c=>c.addEventListener('change',()=>{progress();save(false)}));[improve,help].forEach(e=>e.addEventListener('input',()=>save(false)));date.addEventListener('change',load);document.getElementById('saveBtn').addEventListener('click',()=>save(true));document.getElementById('printBtn').addEventListener('click',()=>window.print());document.getElementById('resetBtn').addEventListener('click',()=>{if(!confirm("Clear this day's checks and notes on this device?"))return;checks.forEach(c=>c.checked=false);improve.value='';help.value='';try{localStorage.removeItem(key())}catch(e){}progress();status.textContent="Today's checks and notes have been cleared from this browser."});load()})();
+</script></body></html>
